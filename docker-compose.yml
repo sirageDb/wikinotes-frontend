@@ -1,7 +1,7 @@
 version: "3"
 services:
     server:
-        build: ./2104-wns-lyon-groupe1-back
+        build: ../back
         command: sh -c "npm run build && npm run prod"
         expose: 
             - 5000
@@ -18,7 +18,7 @@ services:
         volumes: 
             - data:/data/db
     client:
-        build: ./2104-wns-lyon-groupe1-front
+        build: ../front/
         command: sh -c "npm run build"
         volumes:
             - web-client-build:/client/build
