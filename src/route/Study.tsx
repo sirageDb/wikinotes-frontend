@@ -30,7 +30,7 @@ export default function Study() {
             key={element.id}
           >
             <img
-              src={`${process.env.REACT_APP_WIKINOTES_API_URL}/${element.imageUrl}`}
+              src={`${process.env.REACT_APP_WIKINOTES_STATIC_FILES_URL}/${element.imageUrl}`}
               alt={element.name}
             />
             <Link
